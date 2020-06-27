@@ -1,12 +1,11 @@
 /**
- * Cylinder area calculation function
- * @param {number} r
- * @param {number} h
+ * Triangle area calculation function
+ * @param a
+ * @param h
  * @returns {number}
  */
-function cylinderArea(r, h) {
-    const PI = 3.14159265359;
-    return 2 * PI * r * (h + r);
+function areaTriangle(a, h) {
+    return 1 / 2 * a * h;
 }
 
-cylinderArea(2, 5);
+areaTriangle(2, 5);
