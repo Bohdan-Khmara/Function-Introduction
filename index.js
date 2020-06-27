@@ -1,18 +1,20 @@
 /**
- * function of checking the multiplicity of one number to another
- * @param {number} firstNumber
- * @param {number} secondNumber
+ * Triangle Check Function
+ * @param {number} a
+ * @param {number} b
+ * @param {number} c
  * @returns {boolean}
  */
-function checkMultiplicity(firstNumber, secondNumber) {
-    let operation = firstNumber % secondNumber;
-    if (operation === 0) {
-        return true;
-    } else {
+function triangleCheck(a, b, c) {
+    if (a > (b + c)) {
         return false;
-    }
+    } else if (b > (a + c)) {
+        return false;
+    } else if (c > (a + b)) {
+        return false;
+    } else return true;
 
 }
 
-checkMultiplicity(15, 3);
+triangleCheck(10, 5, 5);
 
