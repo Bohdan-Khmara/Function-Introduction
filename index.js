@@ -1,11 +1,12 @@
 /**
- * Rhombus area calculation function
- * @param {number} a
+ * Cylinder area calculation function
+ * @param {number} r
  * @param {number} h
  * @returns {number}
  */
-function diamondSquare(a, h) {
-    return a * h;
+function cylinderArea(r, h) {
+    const PI = 3.14159265359;
+    return 2 * PI * r * (h + r);
 }
 
-diamondSquare(2, 2);
+cylinderArea(2, 5);
