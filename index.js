@@ -1,16 +1,18 @@
 /**
- *
- * @param {number} age check
+ * function of checking the multiplicity of one number to another
+ * @param {number} firstNumber
+ * @param {number} secondNumber
  * @returns {boolean}
  */
-function isAdult(age) {
-    if (age < 20) {
-        return false;
-    } else {
+function checkMultiplicity(firstNumber, secondNumber) {
+    let operation = firstNumber % secondNumber;
+    if (operation === 0) {
         return true;
+    } else {
+        return false;
     }
+
 }
 
-isAdult(19);
-
+checkMultiplicity(15, 3);
 
