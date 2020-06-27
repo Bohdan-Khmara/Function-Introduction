@@ -1,20 +1,11 @@
 /**
- * Triangle Check Function
+ * Rhombus area calculation function
  * @param {number} a
- * @param {number} b
- * @param {number} c
- * @returns {boolean}
+ * @param {number} h
+ * @returns {number}
  */
-function triangleCheck(a, b, c) {
-    if (a > (b + c)) {
-        return false;
-    } else if (b > (a + c)) {
-        return false;
-    } else if (c > (a + b)) {
-        return false;
-    } else return true;
-
+function diamondSquare(a, h) {
+    return a * h;
 }
 
-triangleCheck(10, 5, 5);
-
+diamondSquare(2, 2);
