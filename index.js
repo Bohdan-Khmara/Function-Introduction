@@ -1,11 +1,11 @@
 /**
- * Triangle area calculation function
+ * Rectangle area calculation function
  * @param a
- * @param h
+ * @param b
  * @returns {number}
  */
-function areaTriangle(a, h) {
-    return 1 / 2 * a * h;
+function rectangleArea(a, b) {
+    return a * b;
 }
 
-areaTriangle(2, 5);
+rectangleArea(2, 2);
